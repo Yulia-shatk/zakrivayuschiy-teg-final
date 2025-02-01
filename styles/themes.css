@@ -15,6 +15,7 @@
     --heart-contour: #000;
     --label-shadow: #fff;
     --text-button: #fff;
+    --variation-font-width: 700;
 }
 
   :root .theme-dark {
@@ -24,10 +25,11 @@
     --background-image: repeating-linear-gradient( to left,#000 0 2px, transparent 2px 4px),
     repeating-linear-gradient(#000 0 2px, transparent 2px 4px),
     linear-gradient(#007f0c, #004306);
-    --main-font-width: 400;
+    --main-font-width: 465;
     --heart-contour: #00cc14;
     --label-shadow: #000;
     --text-button: #00cc14;
+    --variation-font-width: 785;
 }
   @media (prefers-color-scheme: light) {
     :root {
@@ -38,6 +40,9 @@
     repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px),
     linear-gradient(#e7e7e7 0.01%, #1a1a1a);
       --main-font-width: 400;
+      --label-shadow: #fff;
+      --text-button: #fff;
+      --variation-font-width: 700;
     }
     :root.theme-auto {
       --background-image: repeating-linear-gradient( to left, #d3d3d3 0 2px, transparent 2px 4px),
@@ -46,6 +51,9 @@
       --accent-color: #000;
       --text-color: #000;
       --main-font-width: 400;
+      --label-shadow: #fff;
+      --text-button: #fff;
+      --variation-font-width: 700;
     }
 }
 
@@ -57,7 +65,11 @@
       --background-image: repeating-linear-gradient( to left,#000 0 2px, transparent 2px 4px),
     repeating-linear-gradient(#000 0 2px, transparent 2px 4px),
     linear-gradient(#007f0c, #004306);
-      --main-font-width: 400;
+      --main-font-width: 465;
+      --heart-contour: #00cc14;
+      --label-shadow: #000;
+      --text-button: #00cc14;
+      --variation-font-width: 785;
     }
     :root .theme-auto {
       --background-image: repeating-linear-gradient( to left,#000 0 2px, transparent 2px 4px),
@@ -65,6 +77,10 @@
     linear-gradient(#007f0c, #004306);
       --accent-color: #00cc14;
       --text-color: #00cc14;
-      --main-font-width: 400;
+      --main-font-width: 465;
+      --heart-contour: #00cc14;
+      --label-shadow: #000;
+      --text-button: #00cc14;
+      --variation-font-width: 785;
     }
 }
