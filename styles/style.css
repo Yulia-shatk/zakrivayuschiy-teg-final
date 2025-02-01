@@ -84,12 +84,10 @@
 .theme-menu__button:hover {
   opacity: 0.6;
 }
-
 .theme-menu__button:disabled {
   opacity: 0.6;
   pointer-events: none;
 }
-
 .theme-menu__button:disabled::before {
   content: "▶";
   display: block;
@@ -134,7 +132,7 @@
   transition: opacity 0.5s;
 }
 button:focus-visible {
-  border: 2px solid var(--accent-color);
+  border: 0.5px solid var(--accent-color);
 }
 .button {
   position: relative;
@@ -194,16 +192,19 @@ button:focus-visible {
   cursor: pointer;
   transition: outline 0.3s ease;
   display: grid;
-  padding: 0px;
+  block-size: 34px;
+  inline-size: 31px;
   margin-right: 12px;
+  justify-content: center;
   align-content: center;
+  padding-inline-end: 11px;
 }
 
 .card__icon-button:focus {
   outline: none;
 }
 .card__icon-button:focus-visible {
-  outline: 2px solid var(--accent-color);
+  outline: 0px solid var(--accent-color);
 }
 
 .content {
@@ -224,7 +225,7 @@ button:focus-visible {
   border-block-end: 2px solid var(--accent-color);
   font-size: 18px;
   padding: 5px 10px;
-  font-variation-settings: "wght" 700;
+  font-variation-settings: "wght" var(--variation-font-width);
   font-family: var(--main-font-family);
 }
 .card_content {
@@ -288,11 +289,10 @@ filter: hue-rotate(32deg) brightness(1.2) saturate(1);
   z-index:1;
   opacity: 0.5;
   mix-blend-mode: hard-light;
-  -webkit-text-stroke: 1px var(--label-shadow);
   text-shadow: 0 0 1px var(--label-shadow);
 }
 @supports (text-stroke: 1px var(--label-shadow)) or (-webkit-text-stroke: 1px var(--label-shadow)) {
-  .card__label {
+  .card_label {
     -webkit-text-stroke: 1px var(--label-shadow, #fff);
     text-shadow: none;
   }
@@ -341,6 +341,7 @@ filter: hue-rotate(32deg) brightness(1.2) saturate(1);
   line-height: 150%;
   text-transform: uppercase;
 }
+
 .dialog-title-container {
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -374,6 +375,7 @@ filter: hue-rotate(32deg) brightness(1.2) saturate(1);
   aspect-ratio: 1/1;
   transition: color 1s ease;
   margin-inline-end: 10px;
+  align-self: center;
 }
 
 @media (width <= 375px) {
